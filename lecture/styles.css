@@ -1,0 +1,135 @@
+header {
+  height: 6vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+h1 {
+  font-family: "Gilroy-Bold";
+}
+#mainHeaderText {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  margin-left: 9.4%;
+  margin-right: 43px;
+}
+#headerButton {
+  border: 1.04px solid #1943ef;
+  border-radius: 34px;
+  height: 32px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 9.5%;
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Gilroy-Light";
+  transition: 0.4s;
+  background-color: #1943ef;
+  color: #fff;
+}
+#headerButton:active {
+  background-color: #fff;
+  color: #1943ef;
+}
+#headerButton:hover {
+  cursor: pointer;
+}
+.headerText {
+  color: #73738d;
+  font-size: 13px;
+  font-weight: 600;
+}
+#heroDiv {
+  height: 460px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#mainHeroDiv {
+  display: flex;
+  margin-top: 78px;
+  margin-right: 123px;
+  flex-direction: column;
+  width: 430px;
+}
+#imageInHeroDiv {
+  height: 100%;
+  animation: rotateMaksim 1s linear infinite;
+  border-radius: 100%;
+  height: 500px;
+  width: 500px;
+}
+#textInMainHeroDiv {
+  font-family: "Gilroy-Light";
+  font-size: 14;
+  font-weight: 500;
+}
+#email {
+  height: 41px;
+  border-radius: 35px;
+  border: 0px;
+  background-color: #fcfcfc;
+  padding-inline: 17px;
+  width: 100%;
+}
+#email::placeholder {
+  color: rgba(115, 115, 141, 0.6);
+  font-family: "Gilroy-Medium";
+}
+#settupEmailButton {
+  height: 41px;
+  width: 155px;
+  background-color: #1943ef;
+  position: absolute;
+  border-radius: 35px;
+  border: 0;
+  font-family: "Gilroy-Medium";
+  color: #fff;
+  top: 1px;
+  right: 1px;
+}
+#settupEmailButton:hover {
+  cursor: grab;
+  animation: scaleButton 1s linear infinite;
+}
+#settupEmailButton:active {
+  cursor: grabbing;
+  background-color: #fff;
+  color: #1943ef;
+  border: 1px solid #1943ef;
+}
+#heroInput {
+  position: relative;
+  display: flex;
+}
+
+@media screen and (max-width: 980px) {
+  #mainHeroDiv {
+    margin-right: 0;
+    width: 530px;
+  }
+  #servicesButton,
+  #enterpriseButton,
+  #imageInHeroDiv {
+    display: none;
+  }
+  #loginButton {
+    margin-left: 60px;
+    font-size: 18px;
+  }
+  #pricingButton {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  header {
+    width: 70%;
+  }
+}

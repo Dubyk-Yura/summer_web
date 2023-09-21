@@ -1,0 +1,48 @@
+@keyframes scaleButton {
+  0% {
+    transform: scale(1);
+    background-color: rgba(255, 0, 0, 0.8);
+  }
+  14% {
+    background-color: rgba(255, 166, 0, 0.8);
+  }
+  28% {
+    background-color: rgba(255, 255, 0, 0.8);
+  }
+  42% {
+    background-color: rgba(0, 128, 0, 0.8);
+  }
+  50% {
+    transform: scale(2);
+  }
+  56% {
+    background-color: rgba(64, 193, 236, 0.8);
+  }
+  70% {
+    background-color: rgba(36, 17, 209, 0.8);
+  }
+  84% {
+    background-color: rgba(128, 0, 128, 0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateMaksim {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <button id="toggleButton" onclick="toggleAside()">Toggle Aside</button>
+        <aside id="animalAside">
+            <form id="animalForm">
+                <h2>Add New Animal</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+
+                <label for="description">Description:</label>
+                <textarea id="description"></textarea>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price">
+
+                <label for="type">Type:</label>
+                <select id="type">
+                    <option value="" disabled selected>Select animal type</option>
+                    <option value="Mammal">Mammal</option>
+                    <option value="Bird">Bird</option>
+                    <option value="Fish">Fish</option>
+                    <option value="Reptile">Reptile</option>
+                    <option value="Amphibian">Amphibian</option>
+                </select>
+
+                <button type="button" onclick="saveAnimal()">Save</button>
+            </form>
+        </aside>
+        <main>
+            <h2>Animal List</h2>
+            <div id="animalList">
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
